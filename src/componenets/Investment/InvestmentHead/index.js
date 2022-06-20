@@ -1,10 +1,8 @@
 import React from "react";
 // import masthead_blur from '../../../assets/images/masthead-pic-blur.png';
-import masthead from '../../../assets/images/masthead-pic.png';
-
+import masthead from "../../../assets/images/masthead-pic.png";
 
 const InvestmentHead = () => {
-
   return (
     <div className="masthead-container curve-parent blue-circle">
       <div className="masthead">
@@ -14,20 +12,20 @@ const InvestmentHead = () => {
               <a
                 href="/"
                 className="card-image"
-                style={{backgroundImage: `url(${masthead})`}}  //it should be "masthead_blur" also check main.css -> 'card-image' with filter: blur(3px) which is not working
+                style={{ backgroundImage: `url(${masthead})` }} //it should be "masthead_blur" also check main.css -> 'card-image' with filter: blur(3px) which is not working
                 title="Invest in Mutual Funds Easily"
                 data-image-full={masthead}
               >
                 <img
                   className="d-block img-fluid"
-                  src={masthead}  //it should be => masthead_blur
+                  src={masthead} //it should be => masthead_blur
                   alt="Invest in Mutual Funds Easily"
                 />
               </a>
             </div>
             <div className="col-md-6 col-xxl-5">
               <h1>
-                Invest in <span className="highlight-text">Mutual Funds Are Not Availble</span>{" "}
+                Invest in <span className="highlight-text">Mutual Funds</span>{" "}
                 Easily
               </h1>
               <p>
