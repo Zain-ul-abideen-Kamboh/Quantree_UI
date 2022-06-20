@@ -27,7 +27,7 @@ const InvestmentHead = () => {
             </div>
             <div className="col-md-6 col-xxl-5">
               <h1>
-                Invest in <span className="highlight-text">Mutual Funds</span>{" "}
+                Invest in <span className="highlight-text">Mutual Funds Are Not Availble</span>{" "}
                 Easily
               </h1>
               <p>
