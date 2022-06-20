@@ -1,0 +1,55 @@
+.choose-quantree {
+
+    .row > .col:not(:last-child) {
+
+        .card {
+            margin-bottom: 24px;
+        }
+    }
+
+    .card {
+        border-radius: 20px;
+        background: #FFFFFF;
+        border: 1px solid rgba(220, 226, 238, 0.71);
+        box-shadow: 0px 10px 62px rgba(38, 45, 118, 0.08);
+
+        .card-body {
+            padding: 32px 24px;
+        }
+
+        img {
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            margin-bottom: 16px;
+            @include font-semibold;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .button-row {
+        margin-top: 24px;
+    }
+
+    @media (min-width: $bp-xxl) {
+
+        .card {
+
+            h2 {
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: -0.01em;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 28px;
+                opacity: 0.8;
+            }
+        }
+    }
+}

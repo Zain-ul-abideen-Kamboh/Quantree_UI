@@ -1,0 +1,65 @@
+.btn {
+    border-radius: 10px;
+    @include font-semibold;
+
+    @media (min-width: $bp-xl) {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 14px 48px;
+    }
+
+    @media (min-width: $bp-xxl) {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 20px 48px;
+        border-radius: 16px;
+    }
+}
+
+.btn-primary {
+    border-color: $button-primary;
+    background-color: $button-primary;
+
+    &:hover {
+        border-color: $button-primary-hover;
+        background-color: $button-primary-hover;
+    }
+
+    &:focus {
+        border-color: $button-primary-hover;
+        background-color: $button-primary-hover;
+        box-shadow: 0 0 0 0.25rem rgba($button-primary-hover, 0.5);
+
+        &:hover {
+            box-shadow: 0 0 0 0.25rem rgba($button-primary-hover, 0.5);
+        }
+    }
+}
+
+.btn-secondary {
+    color: $text-darkgray;
+    border-color: $button-secondary;
+    background-color: $button-secondary;
+
+    &:hover {
+        color: $text-darkgray;
+        border-color: $button-secondary-hover;
+        background-color: $button-secondary-hover;
+    }
+
+    &:focus {
+        color: $text-darkgray;
+        border-color: $button-secondary-hover;
+        background-color: $button-secondary-hover;
+        box-shadow: 0 0 0 0.25rem rgba($button-secondary-hover, 0.5);
+
+        &:hover {
+            box-shadow: 0 0 0 0.25rem rgba($button-secondary-hover, 0.5);
+        }
+    }
+}
+
+.btn-outline-primary {
+    color: $text-darkgray;
+    border-color: $text-darkgray;
+}

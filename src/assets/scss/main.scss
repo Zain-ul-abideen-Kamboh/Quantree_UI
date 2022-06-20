@@ -1,0 +1,49 @@
+:root {
+    --bs-body-color: #16162A;
+    --bs-primary-rgb: 87, 82, 218;
+    --bs-font-sans-serif: 'Poppins', system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/buttons';
+
+// Partials
+@import 'partials/common';
+
+// Home Section
+@import 'partials/home/masthead';
+@import 'partials/home/problem-statement';
+@import 'partials/home/money-invest';
+@import 'partials/home/right-invest';
+@import 'partials/home/choose-quantree';
+@import 'partials/home/partners';
+
+// Inner Pages
+@import 'partials/inner/story-line';
+@import 'partials/inner/robo-advisor';
+@import 'partials/inner/why-quantree';
+@import 'partials/inner/contact';
+@import 'partials/inner/faq';
+@import 'partials/inner/box';
+
+.card-image {
+    display: block;
+    min-height: 20rem; /* layout hack */
+    background: transparent center center no-repeat;
+    background-size: cover;
+    filter: blur(3px); /* blur the lowres image */
+  }
+  
+  .card-image > img {
+    display: block;
+    width: 100%;
+    opacity: 0; /* visually hide the img element */
+  }
+  
+  .card-image.is-loaded {
+    filter: none; /* remove the blur on fullres image */
+    transition: filter 1s;
+  }

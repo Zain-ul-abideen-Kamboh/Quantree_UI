@@ -1,0 +1,91 @@
+.faq {
+
+    .faq-list {
+
+        .ui-accordion-header {
+            font-size: 20px;
+            margin-bottom: 0;
+            line-height: 24px;
+            margin-bottom: 24px;
+            // line-height: 56px;
+            padding: 12px 48px;
+            border-radius: 16px;
+            color: $text-darkgray;
+            @include font-semibold;
+            border: 1px solid #F1F6FF;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: 12px 18px;
+            background-image: url(../images/faq-collapsed.svg);
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .ui-accordion-header-icon {
+                display: none;
+            }
+
+            &.ui-accordion-header-active {
+                margin-bottom: 0;
+                border-bottom: none;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                background-position: 12px 22px;
+                background-image: url(../images/faq-expanded.svg);
+            }
+        }
+
+        .ui-accordion-content {
+            max-height: 0;
+            margin-bottom: 24px;
+            padding: 0 48px 32px;
+            height: auto !important;
+            background-color: #fff;
+            border: 1px solid #F1F6FF;
+            border-top: none;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            box-shadow: 12px 21px 30px rgba(32, 6, 86, 0.1);
+            transition: max-height .3s ease-in-out;
+
+            &.ui-accordion-content-active {
+                max-height: 9999px;
+            }
+
+            a {
+                color: $text-darkgray;
+                @include font-semibold;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media(min-width: $bp-xl) {
+
+        .faq-list {
+            margin-top: 48px;
+
+            .ui-accordion-header {
+                line-height: 56px;
+                padding: 16px 16px 16px 120px;
+                background-position: 46px 36px;
+
+                &.ui-accordion-header-active {
+                    background-position: 46px 40px;
+                }
+            }
+
+            .ui-accordion-content {
+                padding: 0 16px 40px 120px;
+            }
+        }
+    }
+}

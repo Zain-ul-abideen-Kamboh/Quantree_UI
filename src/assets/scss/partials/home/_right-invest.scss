@@ -1,0 +1,344 @@
+.right-invest {
+    padding-left: var(--bs-gutter-x,.75rem);
+    background-color: $lightgray-background;
+    padding-right: var(--bs-gutter-x,.75rem);
+
+    > .row {
+
+        > .col {
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .flexslider .card {
+        border: none;
+        border-radius: 21px;
+        background: #FFFFFF;
+
+        .card-body {
+            border: none;
+            padding: 16px 16px 25px;
+            @include size(306px, 250px);
+
+            .card-img {
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 12px;
+                border-radius: 16px;
+                background: #F1F6FF;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                @include size(274px, 180px);
+
+                img {
+                    max-width: 258px;
+                    max-height: 150px;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+                @include font-bold;
+            }
+        }
+    }
+
+    .right-invest-items {
+        margin-bottom: 48px;
+    }
+
+    .flexslider {
+        border: none;
+        border-radius: 0;
+        margin: 0 0 72px;
+        background: transparent;
+    }
+
+    .flex-control-nav {
+
+        li {
+            vertical-align: middle;
+        }
+
+        a {
+            box-shadow: none;
+            @include size(12px);
+            background: transparent;
+            border: 1px solid #9BA8BB;
+
+            &.flex-active {
+                @include size(16px);
+                background-color: #5752DA;
+            }
+        }
+    }
+
+    @media(min-width: $bp-xl) {
+        > .row > .col {
+            margin-bottom: 0;
+        }
+
+        .flexslider .card {
+
+            .card-body {
+                padding: 16px 16px 25px;
+                @include size(306px, 380px);
+
+                .card-img {
+                    margin-bottom: 24px;
+                    @include size(274px, 246px);
+
+                    img {
+                        max-height: 190px;
+                    }
+                }
+
+                p {
+                    font-size: 24px;
+                    line-height: 34px;
+                    letter-spacing: -0.01em;
+                }
+            }
+        }
+    }
+
+    @media(min-width: $bp-xxl) {
+
+        .flex-control-nav {
+            bottom: -64px;
+        }
+    }
+}
+
+.calculator-container {
+    margin-top: 100px;
+
+    @media(min-width: $bp-xl) {
+        margin-top: 180px;
+    }
+}
+
+.risk-btn-group {
+    margin-bottom: 60px;
+
+    .btn {
+        // padding: 12px 45px;
+        padding: 12px 18px;
+        margin-left: 8px;
+        margin-right: 8px;
+        position: relative;
+        @include font-regular;
+
+        &:hover {
+            color: $text-darkgray;
+            border-color: $text-darkgray;
+            background-color: rgba(#fff, 0.7);
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            color: $text-darkgray;
+            @include font-semibold;
+            border-color: $button-secondary;
+            background-color: $button-secondary;
+            
+            &:after {
+                content: '';
+                width: 0;
+                height: 0;
+                top: 100%;
+                left: 50%;
+                margin-left: -9px;
+                border: solid transparent;
+                border-width: 9px;
+                position: absolute;
+                pointer-events: none;
+                border-top-color: $button-secondary;
+
+            }
+        }
+    }
+
+    @media (min-width: $bp-md) {
+
+        .btn {
+            padding: 12px 45px;
+        }
+    }
+}
+
+.investment-calculator-container {
+    background-color: $lightgray-background;
+}
+
+.investment-calculator {
+    border: none;
+    margin-bottom: 48px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08) !important;
+
+    .card-body {
+        padding: 32px;
+    }
+
+    .form-label {
+        @include font-semibold;
+        color: $text-secondary;
+    }
+
+    .input-group {
+        background: #F1F6FF;
+        border-radius: 8px;
+
+        .input-group-text {
+            border: none;
+            color: $text-darkgray;
+            background: transparent;
+        }
+
+        .form-control {
+            border: none;
+            font-size: 1.2rem;
+            text-align: right;
+            @include font-semibold;
+            background: transparent;
+        }
+    }
+
+    h3 {
+        color: #57E190;
+        @include font-bold;
+    }
+
+    .ui-slider {
+        border: none;
+        height: 10px;
+        border-radius: 0;
+        position: relative;
+        margin-top: 12px;
+        margin-bottom: 24px;
+        background-color: #E0E7FA;
+
+        .ui-slider-range {
+            top: 0;
+            left: 0;
+            z-index: 1;
+            height: 100%;
+            border: none;
+            border-radius: 0;
+            position: absolute;
+            background-color: #2F76FC;
+        }
+
+        .ui-slider-handle {
+            top: -12px;
+            z-index: 2;
+            margin-left: -14px;
+            position: absolute;
+            border-radius: 50%;
+            @include size(32px);
+            background: #2F76FC;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 8px -2px rgba(20, 17, 93, 0.32);
+
+            &.ui-state-hover {
+                background: #0051E9;
+            }
+
+            &.ui-state-focus {
+                outline: 0;
+                border: 3px solid #FFF;
+            }
+        }
+    }
+
+    .slider-row {
+        margin-bottom: 36px;
+    }
+
+    @media (min-width: $bp-md) {
+
+        .slider-row {
+            display: flex;
+            align-items: center;
+
+            .slider-label {
+                width: 150px;
+
+                .form-label {
+                    margin: 0;
+                }
+            }
+
+            .slider {
+                width: calc(100% - 374px);
+
+                .ui-slider {
+                    margin: 0;
+                }
+            }
+
+            .slider-input {
+                margin-left: 24px;
+                max-width: 200px;
+            }
+        }
+    }
+
+    @media (min-width: $bp-xxl) {
+        
+        .card-body {
+            padding: 110px 56px 48px;
+        }
+
+        .slider-row {
+
+            .slider-label {
+                width: 185px;
+                
+                .form-label {
+                    color: #333;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            .slider-input {
+                max-width: 255px;
+            }
+        }
+
+        .input-group {
+            height: 56px;
+
+            .form-control {
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+
+        p.lead {
+            margin-top: 80px;
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 1px;
+        }
+
+        h3 {
+            font-size: 50px;
+            line-height: 75px;
+            color: #57E190;
+        }
+    }
+}
