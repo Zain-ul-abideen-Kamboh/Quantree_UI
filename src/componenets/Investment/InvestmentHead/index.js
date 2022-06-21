@@ -1,6 +1,7 @@
 import React from "react";
 // import masthead_blur from '../../../assets/images/masthead-pic-blur.png';
 import masthead from "../../../assets/images/masthead-pic.png";
+// import { Link } from "react-router-dom";
 
 const InvestmentHead = () => {
   return (

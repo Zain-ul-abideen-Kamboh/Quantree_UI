@@ -27,14 +27,14 @@ const InvestmentWay = () => {
           </p>
         </div>
         <div className="flexslider carousel">
-          <ul className="slides">
-            <Carousel style={{minWidth: "100%"}}>
-              <Row style={{marginBottom: "100px"}}>
+          <ul className="slides" style={{ width: "100%",  marginLeft: "0%" }}>
+            <Carousel style={{ minWidth: "100%" }}>
+              <Row style={{ marginBottom: "100px" }}>
                 <Col lg={3} md={4} sm={6}>
-                  <li>
-                    <div className="card">
-                      <div className="card-body">
-                        <div className="card-img">
+                  <span>
+                    <div className="card"  data-aos-once="true">
+                      <div className="card-body" >
+                        <div className="card-img" >
                           <img
                             src={right_invest_trip}
                             alt="Take the trip of a lifetime"
@@ -45,10 +45,10 @@ const InvestmentWay = () => {
                         <p>Take the trip of a lifetime</p>
                       </div>
                     </div>
-                  </li>
+                  </span>
                 </Col>
                 <Col lg={3} md={4} sm={6}>
-                  <li>
+                  <span>
                     <div className="card">
                       <div className="card-body">
                         <div className="card-img">
@@ -62,10 +62,10 @@ const InvestmentWay = () => {
                         <p>Buy a home for your family</p>
                       </div>
                     </div>
-                  </li>
+                  </span>
                 </Col>
                 <Col lg={3} md={4} sm={6}>
-                  <li>
+                  <span>
                     <div className="card">
                       <div className="card-body">
                         <div className="card-img">
@@ -79,10 +79,10 @@ const InvestmentWay = () => {
                         <p>Pay for a wedding</p>
                       </div>
                     </div>
-                  </li>
+                  </span>
                 </Col>
                 <Col lg={3} md={4} sm={6}>
-                  <li>
+                  <span>
                     <div className="card">
                       <div className="card-body">
                         <div className="card-img">
@@ -96,12 +96,12 @@ const InvestmentWay = () => {
                         <p>Retire at your young age</p>
                       </div>
                     </div>
-                  </li>
+                  </span>
                 </Col>
               </Row>
               <Row>
                 <Col lg={3} md={4} sm={6}>
-                  <li>
+                  <span>
                     <div className="card">
                       <div className="card-body">
                         <div className="card-img">
@@ -115,10 +115,10 @@ const InvestmentWay = () => {
                         <p>Save for kid's education</p>
                       </div>
                     </div>
-                  </li>
+                  </span>
                 </Col>
                 <Col lg={3} md={4} sm={6}>
-                  <li>
+                  <span>
                     <div className="card">
                       <div className="card-body">
                         <div className="card-img">
@@ -132,10 +132,10 @@ const InvestmentWay = () => {
                         <p>Build your wealth</p>
                       </div>
                     </div>
-                  </li>
+                  </span>
                 </Col>
                 <Col lg={3} md={4} sm={6}>
-                  <li>
+                  <span>
                     <div className="card">
                       <div className="card-body">
                         <div className="card-img">
@@ -149,10 +149,10 @@ const InvestmentWay = () => {
                         <p>Plan for future Expense</p>
                       </div>
                     </div>
-                  </li>
+                  </span>
                 </Col>
                 <Col lg={3} md={4} sm={6}>
-                  <li>
+                  <span>
                     <div className="card">
                       <div className="card-body">
                         <div className="card-img">
@@ -166,7 +166,7 @@ const InvestmentWay = () => {
                         <p>Save for any emergencies</p>
                       </div>
                     </div>
-                  </li>
+                  </span>
                 </Col>
               </Row>
             </Carousel>

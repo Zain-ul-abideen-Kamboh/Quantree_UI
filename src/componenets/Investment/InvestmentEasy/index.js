@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 // import InputRange from 'react-input-range';
 import Slider from "react-input-slider";
+import { Button } from "react-bootstrap";
 
 const InvestmentEasy = () => {
   const [year, setYear] = useState({ x: 5 });
   const [amount, setAmount] = useState({ x: 50000 });
   return (
-    <>
+    <Fragment>
       <div className="calculator-container" style={{ marginTop: "0px" }}>
         <div className="container">
           <div className="section-heading">
@@ -32,7 +33,7 @@ const InvestmentEasy = () => {
                 <div className="slider">
                   <Slider
                     style={{ marginBottom: 5, marginTop: 15, minWidth: "100%" }}
-                    numberOnly
+                    // numberOnly
                     axis="x"
                     xstep={1}
                     xmin={1}
@@ -46,7 +47,6 @@ const InvestmentEasy = () => {
                   <span className="input-group-text">PKR</span>
                   <input
                     type="number"
-                    readonly
                     className="form-control"
                     id="investment-total"
                     aria-label="Total Investment"
@@ -56,14 +56,14 @@ const InvestmentEasy = () => {
               </div>
               <div className="slider-row">
                 <div className="slider-label">
-                  <label for="customRange2" className="form-label">
+                  <label htmlFor="customRange2" className="form-label">
                     For how Long?
                   </label>
                 </div>
                 <div className="slider">
                   <Slider
                     style={{ marginBottom: 5, marginTop: 15, minWidth: "100%" }}
-                    numberOnly
+                    // numberOnly
                     axis="x"
                     xstep={1}
                     xmin={1}
@@ -78,7 +78,6 @@ const InvestmentEasy = () => {
                     <span className="input-group-text">Years</span>
                     <input
                       type="number"
-                      readonly
                       id="year-total"
                       className="form-control"
                       aria-label="Years to Invest"
@@ -94,14 +93,14 @@ const InvestmentEasy = () => {
             </div>
           </div>
           <div className="d-grid gap-2 d-md-flex justify-content-md-center">
-            <a href="/" className="btn btn-primary btn-lg">
+            <Button href="/" className="btn btn-primary btn-lg">
               Invest Now
-            </a>
+            </Button>
           </div>
         </div>
       </div>
       <div className="section-bottom-curve"></div>
-    </>
+    </Fragment>
   );
 };
 
