@@ -31,7 +31,7 @@ const InvestmentEasy = () => {
                 </div>
                 <div className="slider">
                   <Slider
-                    style={{ marginBottom: 5, marginTop: 15, minWidth: 800 }}
+                    style={{ marginBottom: 5, marginTop: 15, minWidth: "100%" }}
                     numberOnly
                     axis="x"
                     xstep={1}
@@ -62,7 +62,7 @@ const InvestmentEasy = () => {
                 </div>
                 <div className="slider">
                   <Slider
-                    style={{ marginBottom: 5, marginTop: 15, minWidth: 800 }}
+                    style={{ marginBottom: 5, marginTop: 15, minWidth: "100%" }}
                     numberOnly
                     axis="x"
                     xstep={1}

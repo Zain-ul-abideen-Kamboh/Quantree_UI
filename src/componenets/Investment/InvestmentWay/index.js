@@ -28,7 +28,7 @@ const InvestmentWay = () => {
         </div>
         <div className="flexslider carousel">
           <ul className="slides">
-            <Carousel>
+            <Carousel style={{minWidth: "100%"}}>
               <Row style={{marginBottom: "100px"}}>
                 <Col lg={3} md={4} sm={6}>
                   <li>
