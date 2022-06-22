@@ -49,6 +49,16 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink to={"/signup"} className="nav-link">
+                  Signup
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to={"/login"} className="nav-link">
+                  Login
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <Button className="btn btn-secondary">Invest</Button>
               </li>
             </ul>

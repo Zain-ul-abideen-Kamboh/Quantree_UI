@@ -2,8 +2,6 @@ import React, { useEffect, Fragment } from "react";
 import "./assets/css/main.css";
 // import './assets/css/flexslider.css'
 import Routes from "./routes";
-import Header from "./layouts/Header";
-import Footer from "./layouts/Footer";
 
 import { BrowserRouter, useLocation } from "react-router-dom";
 
@@ -21,9 +19,7 @@ function App() {
     <Fragment>
       <BrowserRouter>
         <ScrollToTop />
-        <Header />
         <Routes />
-        <Footer />
       </BrowserRouter>
     </Fragment>
   );

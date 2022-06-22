@@ -6,10 +6,12 @@ import InvestmentWay from "../../componenets/Investment/InvestmentWay";
 import InvestmentQuantree from "../../componenets/Investment/InvestmentQuantree";
 import AMCPartner from "../../componenets/Investment/Partners/AMCPartner";
 import PrimaryPartner from "../../componenets/Investment/Partners/PrimaryPartner";
+import Body from "../../layouts/Body";
 
 const Investment = () => {
   return (
     <Fragment>
+      <Body>
       <InvestmentHead />
       <InvestmentConfusion />
       <InvestmentMoney />
@@ -17,6 +19,7 @@ const Investment = () => {
       <InvestmentQuantree />
       <PrimaryPartner />
       <AMCPartner />
+      </Body>
     </Fragment>
   );
 };
